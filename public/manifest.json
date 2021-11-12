@@ -1,0 +1,20 @@
+{
+  "short_name": "TMDB by Deniz",
+  "name": "The movie database with custome frontend with React by Deniz Demirbilek",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "tmdb.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
