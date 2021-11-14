@@ -1,0 +1,46 @@
+.hero {
+    color: white;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-color {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 31, 21, 0.6);
+}
+
+.text-content {
+    font-size: 1.2rem;
+    margin: auto 0;
+}
+
+#poster-wrapper {
+    height: 50%;
+    padding-bottom: 20px; 
+    padding-top: 20px;
+    margin: auto 0;
+}
+
+#poster-wrapper img{
+    border-radius: 30px;
+    cursor: pointer;
+    outline: 0.01px solid wheat;
+}
+
+.content-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.trailer {
+    border-radius: 40px;
+}
+
+.trailerDiv {
+    max-width: 80vw;
+    margin: 10px auto;
+
+}

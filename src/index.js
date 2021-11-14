@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import About from "./containers/About/About.jsx";
@@ -23,6 +23,7 @@ render(
             element={
               <main style={{ padding: "5rem" }}>
                 <p>Oops! This page doesn't exist yet!</p>
+                <Link to="/">Go to the homepage</Link>
               </main>
             }
           />

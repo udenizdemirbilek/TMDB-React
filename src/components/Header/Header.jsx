@@ -13,7 +13,7 @@ function Header() {
       <Col md={{ span: 5, offset: 4 }}>
         <Navbar expand="lg" className="my-2">
           <Container>
-            <Navbar.Brand href="/">Deniz's Movie Database</Navbar.Brand>
+            <Navbar.Brand >Deniz's Movie Database</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">

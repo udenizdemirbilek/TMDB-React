@@ -1,10 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css"
 
 function Footer() {
     return (
-        <footer className="footer">
+        <footer className="footer">                           
             <h6>Created with React.JS by Ufuk Deniz Demirbilek</h6>
+            <a href="https://www.denizdemirbilek.com" target="_blank" rel="noopener noreferrer">
+                Take a look at my portfolio!
+            </a> 
         </footer>
     );
 }
