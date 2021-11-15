@@ -1,6 +1,7 @@
 import React from "react";
 import MovieCard from "../MovieCard/MovieCard";
 import { Row, Col } from "react-bootstrap";
+import "./MovieRow.css"
 
 function MovieRow({movies}) {
   return (

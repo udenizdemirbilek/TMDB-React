@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Placeholder } from "react-bootstrap";
 import { useParams } from "react-router";
 import backdropPlaceholder from "../../images/backdropPlaceholder.png";
 import posterPlaceholder from "../../images/posterPlaceholder.png";
@@ -10,6 +9,9 @@ function Details() {
   const [details, setDetails] = useState({
     title: "Loading, just a moment",
     video_url: "",
+    release_date: "",
+    overview: "",
+    vote_average: "",
   });
 
   useEffect(() => {
@@ -38,6 +40,7 @@ function Details() {
     fetchData();
   }, [params.movieId]);
 
+  //Can write these in setDetails later, refactor these!!!
   const backdrop =
     details.backdrop_path === undefined
       ? backdropPlaceholder
@@ -55,27 +58,26 @@ function Details() {
       >
         <div className="hero-color">
           <div className="content-wrapper container-fluid row justify-content">
-            <div id="poster-wrapper" className="col-sm-4 col-10">
+            <div className="poster-wrapper col-sm-4 col-10">
               <img
-                id="movie-poster"
                 src={poster}
-                className="img-fluid"
+                className="img-fluid movie-poster"
                 alt="poster"
               />
             </div>
 
             <div className="text-content col-sm-8 col-10">
-              <h2 id="movie-title">{details.title}</h2>
-              <h5 id="vote"> Vote Average: {details.vote_average}</h5>
-              <h5 id="details"> Release Date: {details.release_date} </h5>
+              <h2 className="movie-title">{details.title}</h2>
+              <h5 className="vote"> Vote Average: {details.vote_average} </h5>
+              <h5 className="details"> Release Date: {details.release_date} </h5>
               <h3>Overview:</h3>
-              <p id="movie-overview">{details.overview}</p>
+              <p className="movie-overview">{details.overview}</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="trailerDiv row align-items-center container-fluid ">
+      <div className="trailerDiv row align-items-center container-fluid" style={{ display:  details.video_url === "" ? "none" : "block"}}>
         <h3 className="text-center">Trailer</h3>
         <div className="ratio ratio-16x9">
           <iframe
@@ -92,13 +94,3 @@ function Details() {
 }
 
 export default Details;
-
-{
-  /* // <div>
-//   <h1>{details.title}</h1>
-//   <img src={details.poster_path ? `https://image.tmdb.org/t/p/w500${details.poster_path}` : posterPlaceholder} alt="poster" />
-//   <img src={details.backdrop_path ? `https://image.tmdb.org/t/p/w500${details.backdrop_path}` : backdropPlaceholder} alt="backdrop" />
-//   <iframe src={details.video_url ? `https://www.youtube.com/embed/${details.video_url}` : backdropPlaceholder} title="video" width="560" height="315" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-//   poster over backdrop image, title, overview, release_date, vote_average, second row trailer
-// </div> */
-}

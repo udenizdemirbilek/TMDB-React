@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Container } from "react-bootstrap";
 import Hero from "../../components/Hero/Hero";
 import MovieRow from "../../components/MovieRow/MovieRow";
 import "./Home.css";
@@ -18,11 +17,11 @@ function Home() {
   }, []);
 
   return (
-    <Container className="content">
+    <div className="home">
       <Hero />
       <MovieRow movies={movies.slice(0, 7)} />
       <MovieRow movies={movies.slice(7, 14)} />
-    </Container>
+    </div>
   );
 
   // API key : ecfdd3d5230c96c392fc9421937894a9 encode it with atob?

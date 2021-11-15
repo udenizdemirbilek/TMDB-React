@@ -1,10 +1,11 @@
-DONE Most popular movies
-https://developers.themoviedb.org/3/discover/movie-discover
+ISSUES:
+make placeholders for the movie cards
+fix hero and header for mobile view
 
-DONE Build a not found page for any manual entry to the URL
+FEATURES:
+Not found page for invalid URL
+Trailer div is hidden if no trailers are returned from the API
+Movie details page title displays The resource you requested could not be found if movie ID is invalid
+Placeholder image is displayed if no poster image is returned from the API
+Placeholder image is displayed if no backdrop image is returned from the API
 
-DONE Set up a placeholder image for poster and bacdrops and title, in case API returns null
-
-Movie Cards needs styling on home page can make placeholders for the cards, the link to details page should be on the movie card, not seperate
-
-DONE Details page needs styling and placeholders
