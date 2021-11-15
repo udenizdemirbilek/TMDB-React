@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Placeholder, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import "./MovieCard.css";
 
 function MovieCard({ movie }) {
