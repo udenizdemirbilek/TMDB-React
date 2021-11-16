@@ -10,7 +10,7 @@ function Header() {
       <Col xs={{ span: 2}} >
         <Image src={logo} alt="logo" width="80" height="80" className="logo"/>
       </Col>
-      <Col sm={{ span: 5, offset: 4 }}>
+      <Col sm={{ span: 5, offset: 5 }}>
         <Navbar expand="lg" className="my-2" >
           <Container className="links">
             <Navbar.Brand >Deniz's Movie Database</Navbar.Brand>
