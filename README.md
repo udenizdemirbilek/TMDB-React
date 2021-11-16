@@ -1,6 +1,7 @@
 ISSUES:
-fix hero and header for mobile view
-make placeholders for the movie cards
+Add margins for trailer div
+make placeholders for the movie cards, details page?
+Write a good README! :)
 
 FEATURES:
 Site live on Netlify https://denizreacttmdb.netlify.app/
