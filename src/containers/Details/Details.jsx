@@ -8,10 +8,10 @@ function Details() {
   let params = useParams();
   const [details, setDetails] = useState({
     title: "Loading, just a moment",
-    video_url: "",
-    release_date: "",
     overview: "",
+    release_date: "",
     vote_average: "",
+    video_url: "",
   });
 
   useEffect(() => {
@@ -26,11 +26,16 @@ function Details() {
       const videoJson = await videoResponse.json();
       setDetails({
         title: detailJson.title || detailJson.status_message,
-        poster_path: detailJson.poster_path,
-        backdrop_path: detailJson.backdrop_path,
         overview: detailJson.overview,
         release_date: detailJson.release_date,
         vote_average: detailJson.vote_average,
+        poster_path: 
+          detailJson.poster_path === undefined
+          ? posterPlaceholder
+          : `https://image.tmdb.org/t/p/w780${detailJson.poster_path}`,
+        backdrop_path: 
+          detailJson.backdrop_path === undefined ? backdropPlaceholder
+          : `https://image.tmdb.org/t/p/w780${detailJson.backdrop_path}`,        
         video_url:
           videoJson.results === undefined || videoJson.results[0] === undefined
             ? ""
@@ -39,28 +44,18 @@ function Details() {
     };
     fetchData();
   }, [params.movieId]);
-
-  //Can write these in setDetails later, refactor these!!!
-  const backdrop =
-    details.backdrop_path === undefined
-      ? backdropPlaceholder
-      : `https://image.tmdb.org/t/p/w780${details.backdrop_path}`;
-  const poster =
-    details.poster_path === undefined
-      ? posterPlaceholder
-      : `https://image.tmdb.org/t/p/w780${details.poster_path}`;
     
   return (
     <>
       <div
         className="hero container-fluid"
-        style={{ backgroundImage: `url(${backdrop})` }}
+        style={{ backgroundImage: `url(${details.backdrop_path})` }}
       >
         <div className="hero-color">
           <div className="content-wrapper container-fluid row justify-content">
             <div className="poster-wrapper col-sm-4 col-10">
               <img
-                src={poster}
+                src={details.poster_path}
                 className="img-fluid movie-poster"
                 alt="poster"
               />

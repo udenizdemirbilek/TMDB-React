@@ -1,8 +1,6 @@
 import React from "react";
 import "./Hero.css"
 
-
-//
 function Hero() {
   return (
     <div className="hero p-1 border" >

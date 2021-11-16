@@ -24,9 +24,6 @@ function Home() {
     </div>
   );
 
-  // API key : ecfdd3d5230c96c392fc9421937894a9 encode it with atob?
-  // store movies data in state (useState) and map through the data
-  // Have two rows of popular movies and render them by 7 in each row using MovieCard
 }
 
 export default Home;
