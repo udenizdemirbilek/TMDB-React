@@ -5,6 +5,12 @@
 
 .pad {
     padding: 5em;
+    margin: 0em 1em;
+    border-radius: 10px;
+}
+
+.border{
+    margin:0em 3em;
 }
 
 @media screen and (max-width: 600px) {
@@ -15,5 +21,6 @@
 
     .pad {
         padding: 2em;
+        margin: 0px;
     }
   }

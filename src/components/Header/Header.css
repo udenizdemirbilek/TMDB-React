@@ -8,9 +8,13 @@
   text-align: center;
 }
 
+.logo{
+    margin-left: 5vw;
+}
+
 @media screen and (max-width: 600px) {
   .logo {
-    margin-left: 26vw;
+    margin-left: 37vw;
     margin-top: 1em;
 }    
 }

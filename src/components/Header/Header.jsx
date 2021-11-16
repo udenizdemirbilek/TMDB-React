@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 function Header() {
   return (
     <Row className="header">
-      <Col xs={{ span: 2, offset: 1 }} >
+      <Col xs={{ span: 2}} >
         <Image src={logo} alt="logo" width="80" height="80" className="logo"/>
       </Col>
       <Col sm={{ span: 5, offset: 4 }}>

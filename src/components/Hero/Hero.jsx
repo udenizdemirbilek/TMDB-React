@@ -5,7 +5,7 @@ import "./Hero.css"
 //
 function Hero() {
   return (
-    <div className="hero p-1 mx-2" >
+    <div className="hero p-1 border" >
       <div className="jumbotron jumbotron-fluid">
         <div className="container pad">
           <h1 className="display-4">Popular movies by Deniz Demirbilek</h1>
