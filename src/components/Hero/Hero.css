@@ -2,3 +2,18 @@
     background-color: #457b9d;
     color: whitesmoke;
 }
+
+.pad {
+    padding: 5em;
+}
+
+@media screen and (max-width: 600px) {
+    .hero{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .pad {
+        padding: 2em;
+    }
+  }
