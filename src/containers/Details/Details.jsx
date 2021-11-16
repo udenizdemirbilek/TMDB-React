@@ -44,11 +44,11 @@ function Details() {
   const backdrop =
     details.backdrop_path === undefined
       ? backdropPlaceholder
-      : `https://image.tmdb.org/t/p/w1280${details.backdrop_path}`;
+      : `https://image.tmdb.org/t/p/w780${details.backdrop_path}`;
   const poster =
     details.poster_path === undefined
       ? posterPlaceholder
-      : `https://image.tmdb.org/t/p/w500${details.poster_path}`;
+      : `https://image.tmdb.org/t/p/w780${details.poster_path}`;
     
   return (
     <>
