@@ -6,11 +6,6 @@
       "src": "icon.png",
       "sizes": "32x32",
       "type": "image/png"
-    },
-    {
-      "src": "images/tmdb.png",
-      "type": "image/png",
-      "sizes": "256x256"
     }
   ],
   "start_url": ".",
